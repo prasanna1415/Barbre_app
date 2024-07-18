@@ -1,3 +1,4 @@
+import 'package:barber_app/pages/home.dart';
 import 'package:barber_app/pages/landing.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Barber Shop',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Landing(),
+      home: Home(),
     );
   }
 }

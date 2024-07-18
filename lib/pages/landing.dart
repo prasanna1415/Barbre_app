@@ -14,14 +14,14 @@ class Landing extends StatelessWidget {
         child:Column(
           crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-        Image.asset("images/headphone.jpg"),
+        Image.asset("images/landing.png"),
         Padding(
           padding: const EdgeInsets.only(left: 20),
-          child: Text("Your\nGateway to\nCutting-Edge Tech",
+          child: Text("Grooming\nExcellence in\nYour Pocket.",
           style: TextStyle(
             color: Colors.black,
             fontSize: 50.0,
-            fontWeight: FontWeight.w700
+            fontWeight: FontWeight.bold
           ),
           ),
         ),

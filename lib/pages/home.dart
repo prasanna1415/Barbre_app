@@ -38,47 +38,13 @@ List catogeries = [
               ),
                ClipRRect(
                 borderRadius: BorderRadius.circular(20),
-                child: Image.asset("images/profile.jpg",height: 70,width: 70,fit: BoxFit.cover,)),
+                child: Image.asset("images/profiles.jpg",height: 70,width: 70,fit: BoxFit.cover,)),
             ],
           ),
-            SizedBox(height: 30,),
-          Container(
-            decoration:BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(20)),
-            width: MediaQuery.of(context).size.width,
-            child: TextField(
-              decoration: InputDecoration(border: InputBorder.none,
-              hintText: "Search Products",
-              hintStyle: AppWidget.lightStyle(),
-              prefixIcon: Icon(Icons.search)
-              ),
-            )),
-
-            SizedBox(height: 20,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Categories",style: 
-              AppWidget.semiBold()
-              ),
-              Text("See All",style:
-            TextStyle(color: Colors.orange.shade900,fontSize: 18,fontWeight: FontWeight.w600)
-              ),
-            ],
-          ),
-
-
-          Container(
-            margin: EdgeInsets.only(left: 20),
-            height: 50,
-            child: ListView.builder(
-              itemCount: catogeries.length,
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index){
-                return CategoriesTile(image: catogeries[index]);
-              }),
-          )
-        
+          SizedBox(height: 20.0),
+            Divider(color: Colors.black54,),
+             Text("Services",style: AppWidget.boldStyle(),),
+           SizedBox(height: 20.0,)
         ],
         ),
       ),
@@ -88,26 +54,5 @@ List catogeries = [
   
 }
 
-// ignore: must_be_immutable
-class CategoriesTile extends StatelessWidget {
-  String image;
-  CategoriesTile({required this.image});
-
-  @override
-  Widget build(BuildContext context) {
-    return  Container(
-      decoration: BoxDecoration(
-        color: Colors.white 
-      ),
-      height: 90,
-      width: 90,
-      child: Column(
-        children: [
-          Image.asset(image)
-        ],
-      ),
-    );
-  }
-}
 
 //this is pro ok boy i am done
