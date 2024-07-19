@@ -43,8 +43,136 @@ List catogeries = [
           ),
           SizedBox(height: 20.0),
             Divider(color: Colors.black54,),
-             Text("Services",style: AppWidget.boldStyle(),),
-           SizedBox(height: 20.0,)
+             Text("Services",style: AppWidget.boldStyle(),
+             ),
+            SizedBox(height: 20.0,),
+
+           Row(
+             children: [
+               Flexible(
+                fit: FlexFit.tight,
+                 child: Container(
+                  height: 150,
+                  decoration:  BoxDecoration(color:Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                   ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("images/haircut.jpg",height: 80,width: 80,fit: BoxFit.cover,),
+                      SizedBox(height: 10,),
+                      Text("Hair Cutting",style: AppWidget.boldStyle(),
+                   ),
+                    ],
+                  ),
+                 ),
+               ),
+                SizedBox(width: 20,),
+               Flexible(
+                fit: FlexFit.tight,
+                 child: Container(
+                  height: 150,
+                  decoration:  BoxDecoration(color:Colors.white,
+                  borderRadius: BorderRadius.circular(20) ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("images/clean.jpg",height: 80,width: 80,fit: BoxFit.cover,),
+                      SizedBox(height: 10,),
+                      Text("Clean Shave",style: AppWidget.boldStyle(),
+                   ),
+                    ],
+                  ),
+                 ),
+               ),
+             ],
+           ),
+           SizedBox(height: 10,),
+           Row(
+             children: [
+               Flexible(
+                fit: FlexFit.tight,
+                 child: Container(
+                  height: 150,
+                  decoration:  BoxDecoration(color:Colors.white,
+                  borderRadius: BorderRadius.circular(20), ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("images/fasial.jpg",height: 80,width: 80,fit: BoxFit.cover,),
+                      SizedBox(height: 10,),
+                      Text("Fasial",style: AppWidget.boldStyle(),
+                   ),
+                    ],
+                  ),
+                 ),
+               ),
+                SizedBox(width: 20,),
+               Flexible(
+                fit: FlexFit.tight,
+                 child: Container(
+                  height: 150,
+                  decoration:  BoxDecoration(color:Colors.white,
+                  borderRadius: BorderRadius.circular(20) ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("images/massages.jpg",height: 80,width: 80,fit: BoxFit.cover,),
+                      SizedBox(height: 10,),
+                      Text("Head Massage",style: AppWidget.boldStyle(),
+                   ),
+                    ],
+                  ),
+                 ),
+               ),
+
+
+             ],
+           ),
+
+            SizedBox(height: 10,),
+
+           Row(
+             children: [
+               Flexible(
+                fit: FlexFit.tight,
+                 child: Container(
+                  height: 150,
+                  decoration:  BoxDecoration(color:Colors.white,
+                  borderRadius: BorderRadius.circular(20) ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("images/hairwash.jpg",height: 80,width: 80,fit: BoxFit.cover,),
+                      SizedBox(height: 10,),
+                      Text("Hair Wash",style: AppWidget.boldStyle(),
+                   ),
+                    ],
+                  ),
+                 ),
+               ),
+                SizedBox(width: 20,),
+               Flexible(
+                fit: FlexFit.tight,
+                 child: Container(
+                  height: 150,
+                  decoration:  BoxDecoration(color:Colors.white ,
+                  borderRadius:BorderRadius.circular(20) ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("images/kids.jpg",height: 80,width: 80,fit: BoxFit.cover,),
+                      SizedBox(height: 10,),
+                      Text("Kids Hair Cut",style: AppWidget.boldStyle(),
+                   ),
+                    ],
+                  ),
+                 ),
+               ),
+
+
+             ],
+           )
         ],
         ),
       ),
