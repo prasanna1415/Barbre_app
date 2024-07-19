@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:barber_app/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 class Landing extends StatelessWidget {
@@ -40,13 +41,16 @@ class Landing extends StatelessWidget {
                 ) , 21),
                 shape: BoxShape.rectangle
               ),
-              child: Text(
-                "Next",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30.0,
-                fontWeight: FontWeight.w700
-              ),
+              child: GestureDetector(
+                onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Home(),));},
+                child: Text(
+                  "Next",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.w700
+                ),
+                ),
               ),
             ),
           ],
